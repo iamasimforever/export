@@ -1,0 +1,293 @@
+# svelte-select changelog
+
+## 3.17.0
+
+* Add ClearIcon prop
+* Added docs for filteredItems
+* loadOptions res now checked for cancelled value
+
+## 3.16.1
+
+* Bug fix for loadOptions and list causing blur to not close list - thanks to @Ginfone for reporting
+
+## 3.16.0
+
+* New CSS custom props '--placeholderOpacity' and 'disabledPlaceholderOpacity' added - thanks to @tiaanduplessis
+
+## 3.15.0
+
+* Added new prop multiFullItemClearable for easier clearable items when isMulti is true - thanks to @stephenlrandall
+
+## 3.14.3
+
+* Regression fix for 3.14.2 clearing selectedValue if not found in items - thanks to @frederikhors for reporting
+
+## 3.14.2
+
+* Fix so selectedValue updates on items change - thanks to @stephenlrandall
+
+## 3.14.1
+
+* Fix input attributes so the defaults can be overwritten
+
+## 3.14.0
+
+* Added event 'loaded' when loadOptions resolves - thanks to @singingwolfboy
+
+## 3.13.0
+
+* Added TypeScript declaration file - thanks to @singingwolfboy
+
+## 3.12.0
+
+* new event 'error' is dispatched on caught errors
+* loadOptions now catches errors
+* new CSS custom prop '--errorBackground' added
+* CSS fix for long multi items wrapping text
+
+## 3.11.1
+
+* Fix to prevent multiple updates on focus events - thanks to @stephenlrandall
+
+## 3.11.0
+
+* README reformatted
+* iconProps added for Icon component - thanks to @stephenlrandall
+
+## 3.10.1
+
+* Fix for noOptionsMessage not updating when changed - thanks to @frederikhors
+
+## 3.10.0
+
+* Added indicatorSvg prop - thanks to @oharsta (again!)
+
+## 3.9.0
+
+* Added showIndicator prop - thanks to @oharsta
+
+## 3.8.1
+
+* Fix for containerClasses repeating
+
+## 3.8.0
+
+* Added containerClasses prop - thanks to @0xCAP
+
+## 3.7.2
+
+* Fix for loadOptions with items opening list by default
+
+## 3.7.1
+
+* Fix for groupHeader selection on enter - thanks to @KiwiJuicer
+
+## 3.7.0
+
+* Added new CSS vars for groupTitleFontWeight, groupItemPaddingLeft and itemColor - thanks to @john-trieu-nguyen
+
+## 3.6.2
+
+* CSS vars padding default fix
+
+## 3.6.1
+
+* CSS vars typo fix
+
+## 3.6.0
+
+* Added CSS vars for input padding and left
+
+## 3.5.0
+
+* Added Icon and showChevron props
+
+## 3.4.0
+
+* Bumped version of Svelte to 3.19.1 and fixed up some tests
+
+## 3.3.7
+
+* Virtual list height fix
+
+## 3.3.6
+
+*  Thanks for @jpz for this update... Fix input blurring issue when within shadow DOM
+
+## 3.3.5
+
+*  MS Edge fix: Replaced object literal spreading
+
+## 3.3.4
+
+*  Fix for fix for a fix for IE11 disable input fix 😿
+
+## 3.3.3
+
+*  Fix for a fix for IE11 disable input fix (don't code tired!)
+
+## 3.3.2
+
+*  IE11 disable input fix
+
+## 3.3.0
+
+*  Thanks to @jackc for this update... Added itemFilter method
+
+## 3.2.0
+
+*  List will now close if active item gets selected
+
+## 3.1.2
+
+*  Thanks to @dimfeld for these updates...
+*  Removing unused properties from List.svelte
+*  Fix handling of console message type "warning"
+
+## 3.1.1
+
+*  README updated for Sapper SSR
+
+## 3.1.0
+
+*  added prop listAutoWidth - List width will grow wider than the Select container (depending on list item content length)
+*  README updated
+
+## 3.0.2
+
+*  selectedValue that are strings now look-up and set correct value
+*  README / demo updates
+
+## 3.0.1
+
+*  Item created bug fix
+*  Virtual list scroll fix
+
+## 3.0.0
+
+*  Breaking change: isCreatable refactor
+*  getCreateLabel has been removed
+*  If using isCreatable and custom list or item components would need to implement filterText prop
+
+## 2.1.0
+
+*  CSS vars for theme control
+*  Clear event improved for multi-select support
+*  Grouping improvements
+*  Svelte v3 upgrade bug fixes
+
+## 2.0.3
+
+*  allow html content in multi selection
+
+## 2.0.2
+
+*  CSS height bug fix
+*  Fix for Async loading (again)
+
+## 2.0.1
+
+*  Nothing, just npm being weird!
+
+## 2.0.0
+
+*  Upgrade to Svelte v3
+*  Added isCreatable
+
+## 1.7.6
+
+*  Fix for Async loading
+*  Security patch
+
+## 1.7.5
+
+*  Disabled colour values updated
+
+
+## 1.7.4
+
+*  Fix for destroy method
+
+## 1.7.3
+
+*  Fix for isOutOfViewport.js import typo
+
+
+## 1.7.2
+
+*  Moved svelte-virtual-list into source
+
+## 1.7.1
+
+*  Fix for svelte-virtual-list
+
+## 1.7.0
+
+*  Multi-select bug fixes
+*  Added hasError prop and styles
+*  Added isVirtualList prop (Experimental)
+
+## 1.6.0
+
+*  Added menuPlacement
+
+## 1.5.5
+
+*  isMulti on:select bug fix
+
+## 1.5.4
+
+*  Set background default to #fff
+*  Only fire select event when a new item is selected
+
+## 1.5.3
+
+* Removed unused class causing warnings
+* README typo
+
+## 1.5.2
+
+* Reset highlighted item index to 0 when list updates or filters
+
+## 1.5.1
+
+* Fix for npm publish missing a file
+
+## 1.5.0
+
+* Added events for select and clear
+* Updated README
+* Added tests
+
+## 1.4.0
+
+* Added hideEmptyState
+* Updated README
+* Added tests
+
+## 1.3.0
+
+* Updated README
+* Updated filtering with loadOptions
+* LeftArrow and RightArrow now remove highlight from list items
+* Added tests
+* Updated examples
+
+## 1.2.0
+
+* Updated README
+* Added Async (loadOptions)
+* Added noOptionsMessage
+* Bug fixes
+* Updated examples
+
+## 1.1.0
+
+* Updated README
+* Added Multi-select
+* Added Grouping
+* IE11 support
+
+## 1.0.0
+
+* First release
