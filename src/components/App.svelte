@@ -24,7 +24,13 @@
 	let isLoading = true
 	let embed = null
 	const allSections = [
+		"intro",
+		"filters",
 		"clusters",
+		"map",
+		"timeline",
+		"list",
+		"footer",
 	]
 	// let sections = ["intro"]
 	let sections = []
